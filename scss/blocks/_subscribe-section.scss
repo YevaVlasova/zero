@@ -1,0 +1,78 @@
+.subscribe-section {
+    display: block;
+    align-items: center;
+    background: $grad-bg;
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    padding: 50px 155px 38px;
+    margin-bottom: 98px;
+
+    &__title {
+        @include text($ff, 700, 4.2rem, 5.5rem, $white);
+        margin-bottom: 13px;
+        text-align: center;
+    }
+    &__desc {
+        @include text($ff, 400, 1.6rem, 3.0rem, $white);
+        text-align: center;
+        opacity: 0.8;
+        margin-bottom: 29px;
+    }
+
+    &__email {
+       
+
+    }
+    @include tablet {
+        padding: 50px 100px;
+    }
+    @include tablet-small {
+        padding: 40px 80px;
+    }
+    @include mobile {
+        padding: 30px 20px;
+    }
+}
+
+.email {
+    background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    .btn_secondary {
+        
+    }
+    &__input {
+        border-radius: 70px;
+        background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+        width: 100%;
+        padding: 25px 44px;
+        border: 0;
+        outline: 0;
+        @include text($ff, 400, 1.8rem, 3.0rem, $white);
+    }
+
+    @include tablet {
+        display: block;
+        background: $darkpurple;
+        margin-inline: auto;
+        .join-section {
+            padding: 20px;
+        }
+        .join-section__email {
+            display: block;
+            align-items: center;
+            padding-right: 0;
+        }
+        .email__input {
+            margin-bottom: 30px;
+        }
+        .btn_subscribe {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
